@@ -1,1 +1,107 @@
 /* Start coding here */
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: Poppins;
+}
+.title {
+    justify-self: center;
+    text-align: center;
+    padding: 40px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.menu-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.job-menu-item ,.last-menu-item{
+    border: solid #f8f8f8 2px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    
+
+}
+.job-img {
+    background-color: #fef3ed;
+    border-radius: 30px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.job-name {
+    display: flex;
+    justify-self: self-end;
+    position: absolute;
+    bottom: 35px;
+    font-weight: bold;
+}
+.job-opened {
+    display: flex;
+    justify-self: self-end;
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.75rem;
+}
+.job-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .last-menu-item {
+    background: linear-gradient(135deg, #FF851B 25%, transparent 25%) -50px 0/ 100px 100px,
+        linear-gradient(225deg, #FF851B 25%, transparent 25%) -50px 0/ 100px 100px,
+        linear-gradient(315deg, #FF851B 25%, transparent 25%) 0px 0/ 100px 100px,
+        linear-gradient(45deg, #FF851B 25%, #F7A76C 25%) 0px 0/ 100px 100px; 
+    width: 200px;
+  }
+
+  .job-menu-item:hover {
+    background-color: #f8f9fb;
+  }
+
+  .last-menu-item:hover {
+        background: linear-gradient(135deg, #FF851B 35%, transparent 25%) -50px 0/ 100px 100px,
+        linear-gradient(225deg, #FF851B 35%, transparent 25%) -50px 0/ 100px 100px,
+        linear-gradient(315deg, #FF851B 35%, transparent 25%) 0px 0/ 100px 100px,
+        linear-gradient(45deg, #FF851B 35%, #F7A76C 25%) 0px 0/ 100px 100px; 
+  }
+
+  .job-menu-item:active {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2)
+}
+    .last-menu-item:active {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2)
+}
+  @media only screen and (max-width: 600px){
+    .menu-row {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
